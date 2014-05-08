@@ -1,0 +1,44 @@
+extends layout
+block title
+  title Jade - node template engine
+block content
+  .navbar.navbar-default.navbar-static-top(role="navigation")
+    .container
+      .navbar-header
+        button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand zsea
+      .navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href="#") Home
+          li  
+            a(href="#") Html
+          li  
+            a(href="#") Css
+          li.dropdown
+            a.dropdown-toggle(href="#", data-toggle="dropdown") Javascript
+              b.caret
+            ul.dropdown-menu
+              li
+                a(href="#") Jquery
+              li
+                a(href="#") Kissy
+              li
+                a(href="#") Javascript
+        .navbar-right(rol="serch")
+
+
+  .container  
+    #test.test
+      if youAreUsingJade
+        |yes
+      else
+        |no
+    p.
+      Jade is a terse and simple
+      templating language with a
+      strong focus on performance
+      and powerful features.
